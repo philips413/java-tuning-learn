@@ -6,7 +6,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 @State(Scope.Thread)
-@BenchmarkMode({Mode.AverageTime})
+@BenchmarkMode({Mode.Throughput})
 @OutputTimeUnit(TimeUnit.MICROSECONDS)
 @Fork(value = 1, warmups = 1)
 @Warmup(iterations = 1)
